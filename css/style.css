@@ -1,127 +1,136 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-body{
-    font-size: 13px;
-    font-family: 'Barlow Semi Condensed', sans-serif;
-    background: hsl(210, 46%, 95%);
-}
-p{
-    color: hsl(0, 0%, 100%);
-    opacity: .7;
-    font-weight: 500;
-    line-height: 20px;
-}
-h1{
-    color: hsl(0, 0%, 100%);
-    margin-bottom: 1em;
-}
-span{
-    color: hsl(0, 0%, 100%);
-    opacity: .5;
-}
-h5{
-    color: hsl(0, 0%, 100%);
-    font-size: 1rem;
-    line-height: 25px;
-}
-.testimonials{
-    width: 90%;
-    max-width: 1170px;
-    margin: 2em auto;
-    display: grid;
-    grid-gap: 2em;
-}
-.client{
-    padding: 3em;
-    border-radius: 10px;
-}
-.client img{
-    border-radius: 50%;
-    margin-right: 2em;
-    border: 3px solid hsl(0, 0%, 81%);
-    width: 40px;
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
 }
 
-.client_top{
-    display: flex;
-    align-items: center;
-    margin-bottom: 2em;
-
+body {
+   font-size: 13px;
+   font-family: 'Barlow Semi Condensed', sans-serif;
+   background: hsl(210, 46%, 95%);
+   min-height: 100vh;
+   display: grid;
+   place-content: center;
 }
-.client_one{
-    background-color: hsl(263, 55%, 52%);
-    background-image: url(/images/bg-pattern-quotation.svg);
-    background-repeat: no-repeat;
-    background-position: 90% 0px;
+p {
+   color: hsl(0, 0%, 100%);
+   opacity: 0.7;
+   font-weight: 500;
+   line-height: 20px;
 }
-.client_two{
-    background-color: hsl(0, 0%, 100%);
-    order: 2;
+h1 {
+   color: hsl(0, 0%, 100%);
+   margin-bottom: 1em;
 }
-
-.client_two span{
-    color: hsl(219, 29%, 14%);
+span {
+   color: hsl(0, 0%, 100%);
+   opacity: 0.5;
 }
-.client_two p{
-    color: hsl(219, 29%, 14%);
+h5 {
+   color: hsl(0, 0%, 100%);
+   font-size: 1rem;
+   line-height: 25px;
 }
-.client_two h1{
-    color: hsl(217, 19%, 35%);
+.testimonials {
+   padding: 2rem;
+   max-width: 1170px;
+   margin-inline: auto;
+   display: grid;
+   grid-gap: 2em;
 }
-.client_two h5{
-    color: hsl(217, 19%, 35%);
+.client {
+   padding: 3em;
+   border-radius: 10px;
 }
-.client_four p{
-    color: hsl(219, 29%, 14%);
-}
-.client_four h1{
-    color: hsl(217, 19%, 35%);
-}
-.client_four h5{
-    color: hsl(217, 19%, 35%);
-}
-.client_four span{
-    color: hsl(219, 29%, 14%);
-}
-
-.client_three{
-    background-color: hsl(217, 19%, 35%);
-    order: 1;
-}
-.client_four{
-    background-color: hsl(0, 0%, 100%);
-    order: 4;
+.client img {
+   border-radius: 50%;
+   margin-right: 2em;
+   border: 3px solid hsl(0, 0%, 81%);
+   width: 40px;
 }
 
-.client_five{
-    background-color: hsl(219, 29%, 14%);
-    order: 3;
+.client_top {
+   display: flex;
+   align-items: center;
+   margin-bottom: 2em;
+}
+.client_one {
+   background-color: hsl(263, 55%, 52%);
+   background-image: url(/images/bg-pattern-quotation.svg);
+   background-repeat: no-repeat;
+   background-position: 90% 0px;
+}
+.client_two {
+   background-color: hsl(0, 0%, 100%);
+   order: 2;
 }
 
-@media (min-width:600px){
-    .testimonials{
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-    .client_one{
-        grid-column: span 2;
-    }
-    .client_two{
-        order: 3;
-    }
-    .client_four{
-        order: 2;
-        grid-row: span 2;
-    }
-    .client_five{
-        order: 4;
-        grid-column: span 2;
-    }
-    .client_three{
-        order: 1;
-    }
+.client_two span {
+   color: hsl(219, 29%, 14%);
+}
+.client_two p {
+   color: hsl(219, 29%, 14%);
+}
+.client_two h1 {
+   color: hsl(217, 19%, 35%);
+}
+.client_two h5 {
+   color: hsl(217, 19%, 35%);
+}
+.client_four p {
+   color: hsl(219, 29%, 14%);
+}
+.client_four h1 {
+   color: hsl(217, 19%, 35%);
+}
+.client_four h5 {
+   color: hsl(217, 19%, 35%);
+}
+.client_four span {
+   color: hsl(219, 29%, 14%);
+}
+
+.client_three {
+   background-color: hsl(217, 19%, 35%);
+   order: 1;
+}
+.client_four {
+   background-color: hsl(0, 0%, 100%);
+   order: 4;
+}
+
+.client_five {
+   background-color: hsl(219, 29%, 14%);
+   order: 3;
+}
+
+@media (min-width: 768px) {
+   .testimonials {
+      grid-template-columns: repeat(2, 1fr);
+   }
+   .client_one {
+      grid-column: span 2;
+   }
+   .client_two {
+      order: 3;
+   }
+   .client_four {
+      order: 2;
+      grid-row: span 2;
+   }
+   .client_five {
+      order: 4;
+      grid-column: span 2;
+   }
+   .client_three {
+      order: 1;
+   }
+}
+
+@media (min-width: 1024px) {
+   .testimonials {
+      grid-template-columns: repeat(4, 1fr);
+   }
 }
